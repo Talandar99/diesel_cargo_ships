@@ -1,12 +1,13 @@
 {
     "name": "diesel_cargo_ships",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "title": "Diesel Cargo Ships",
     "author": "Talandar",
     "dependencies": [
         "base >= 2.0",
         "cargo-ships",
-        "diesel_engine"
+        "diesel_engine",
+        "talandar_cargo_ships_tweaks"
     ],
     "description": "Changes power source on cargo ships to barrels of liquid fuel",
     "factorio_version": "2.0"
