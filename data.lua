@@ -33,3 +33,27 @@ if data.raw["car"]["indep-boat"] then
 	--boat.max_power = "0.3MW"
 	boat.max_power = "0.3MW"
 end
+
+if mods["aai-vehicles-ironclad"] then
+	if settings.startup["aai-vehicles-ironclad-has-diesel-engine"].value then
+		local ironclad = data.raw["car"]["ironclad"]
+		ironclad.energy_source = ironclad.energy_source or {}
+		ironclad.energy_source.type = "burner"
+		ironclad.energy_source.fuel_categories = { "diesel-fuel" }
+		ironclad.energy_source.effectivity = 1
+		ironclad.energy_source.fuel_inventory_size = 4
+		ironclad.energy_source.burnt_inventory_size = 4
+	end
+end
+
+if mods["ironclad-gunboat-and-mortar-turret-fork"] then
+	if settings.startup["aai-vehicles-ironclad-has-diesel-engine"].value then
+		local ironclad = data.raw["car"]["ironclad-gunboat"]
+		ironclad.energy_source = ironclad.energy_source or {}
+		ironclad.energy_source.type = "burner"
+		ironclad.energy_source.fuel_categories = { "diesel-fuel" }
+		ironclad.energy_source.effectivity = 1
+		ironclad.energy_source.fuel_inventory_size = 4
+		ironclad.energy_source.burnt_inventory_size = 4
+	end
+end
