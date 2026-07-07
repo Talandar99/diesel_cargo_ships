@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2026-07-07
+  Changes:
+    - updated mod to factorio 2.1
+    - talandar cargo ship tweaks is no longer required dependency
+  Bugfixes:
+    - K2 no longer overrides fuel categories for cargo ships
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2026-03-24
   Changes:
